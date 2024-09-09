@@ -1,0 +1,64 @@
+/* Overall background color for the window */
+.root {
+    -fx-background-color: #000000; /* Black background */
+    -fx-font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+}
+
+/* Styling for the TextFlow (where the words are displayed in color) */
+.text-flow {
+    -fx-font-size: 18.0px; /* Set the font size to 18px */
+    -fx-font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+}
+
+/* Ensure text inside TextFlow is white by default */
+.text-flow .text {
+    -fx-fill: white; /* Default text color */
+}
+
+/* Styling for the TextField (input box for typing) */
+.text-field {
+    -fx-control-inner-background: #2B2B2B; /* Slightly different gray background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 18.0px; /* Font size matching the font setting */
+    -fx-font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+    -fx-border-color: gray; /* Default border color */
+    -fx-padding: 10.0px; /* Add padding for better readability */
+    -fx-pref-width: 0.0%; /* Allow TextField to take most of the space */
+    -fx-hgrow: always; /* Allow TextField to grow */
+}
+
+/* Correct word highlight in TextFlow */
+.text-flow .correct {
+    -fx-fill: green; /* Green for correct words */
+}
+
+/* Incorrect word highlight in TextFlow */
+.text-flow .incorrect {
+    -fx-fill: red; /* Red for incorrect words */
+}
+
+/* Border color change when incorrect input */
+.text-field.error {
+    -fx-border-color: red; /* Red border for incorrect input */
+}
+
+/* Reset border to gray when input is being corrected */
+.text-field.reset {
+    -fx-border-color: gray; /* Back to gray border on correction */
+}
+
+/* Styling for the Reset Button */
+.reset-button {
+    -fx-background-color: #2B2B2B; /* Same background color as TextField */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 18.0px; /* Match the font size */
+    -fx-font-family: 'Roboto', sans-serif; /* Match the font family */
+    -fx-border-color: gray; /* Same border color as TextField */
+    -fx-padding: 10.0px; /* Match the padding of TextField */
+    -fx-pref-width: 100.0px; /* Fixed width for the Button */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+.reset-button:hover {
+    -fx-background-color: #3c3c3c; /* Slightly lighter color on hover */
+}
